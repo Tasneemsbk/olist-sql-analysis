@@ -1,9 +1,10 @@
 -- Olist e-commerce analysis: load the CSVs
 -- Run 01_create_tables.sql first, then run this from the project root so the
 -- relative data/ paths resolve:
---   mysql --login-path=patents --local-infile=1 < sql/02_load_data.sql
+--   mysql -u root -p --local-infile=1 < sql/02_load_data.sql
 -- The --local-infile=1 flag is required on the client side even when the server
--- already has local_infile = ON, and --login-path must come before it.
+-- already has local_infile = ON. If you use a stored login path instead of
+-- -u root -p, it has to come before the other options or the client rejects it.
 --
 -- ESCAPED BY '' on every load turns off backslash escaping. These CSVs are plain
 -- quoted CSV with no escape character, and leaving the MySQL default in place

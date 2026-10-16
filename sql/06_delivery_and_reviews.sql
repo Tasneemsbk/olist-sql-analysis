@@ -1,6 +1,6 @@
 -- Olist e-commerce analysis: delivery and reviews
 -- Run after 02_load_data.sql:
---   mysql --login-path=patents < sql/06_delivery_and_reviews.sql
+--   mysql -u root -p < sql/06_delivery_and_reviews.sql
 --
 -- An order is late when the customer received it after the estimated delivery
 -- date shown at checkout. 8 of the 96,478 delivered orders have no delivery date

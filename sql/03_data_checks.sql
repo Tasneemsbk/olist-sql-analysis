@@ -1,6 +1,6 @@
 -- Olist e-commerce analysis: data quality checks
 -- Run after 02_load_data.sql:
---   mysql --login-path=patents < sql/03_data_checks.sql
+--   mysql -u root -p < sql/03_data_checks.sql
 -- These run before any analysis so the numbers in the README can be trusted.
 
 USE olist;

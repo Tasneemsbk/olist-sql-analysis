@@ -1,6 +1,6 @@
 -- Olist e-commerce analysis: sales
 -- Run after 02_load_data.sql:
---   mysql --login-path=patents < sql/04_sales_analysis.sql
+--   mysql -u root -p < sql/04_sales_analysis.sql
 --
 -- Revenue here means SUM(order_items.price) on delivered orders only.
 -- Freight is reported separately and is never added into revenue.

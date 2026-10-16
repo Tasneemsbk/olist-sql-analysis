@@ -1,6 +1,6 @@
 -- Olist e-commerce analysis: customers
 -- Run after 02_load_data.sql:
---   mysql --login-path=patents < sql/05_customer_analysis.sql
+--   mysql -u root -p < sql/05_customer_analysis.sql
 --
 -- Revenue means SUM(order_items.price) on delivered orders only.
 -- Customers are counted by customer_unique_id. customer_id is one row per order,
